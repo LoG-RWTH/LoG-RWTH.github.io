@@ -1,0 +1,375 @@
+/* Custom styles for the Learning on Graphs website */
+
+/* Fix for top spacing */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Text alignment and styling */
+#welcome p, 
+#publications p, 
+#publications h3, #publications h4, #publications h5, 
+#teaching p, #teaching h3, #teaching h4, #teaching h5,
+#publications header, #teaching header, 
+#thesis p, #thesis h3, #thesis h4, #thesis h5,
+#thesis header, #thesis .topic-category, #thesis ul, #thesis li {
+    text-align: left;
+}
+
+/* University link centering */
+#welcome p:first-of-type {
+    text-align: center;
+}
+
+/* Group photo styling */
+#welcome .image.fit img {
+    max-width: 80%; 
+    margin: 0 auto;
+}
+
+/* Group member cards */
+.box.style1 p {
+    text-align: justify;
+    color: #333333;
+}
+
+/* Center roles in group member cards */
+.box.style1 p:first-of-type {
+    text-align: center;
+}
+
+/* Teaching section text colors */
+#teaching p, #teaching h3, #teaching h4, #teaching h5, #teaching li,
+#teaching td, #teaching th, 
+#thesis p, #thesis h3, #thesis h4, #thesis h5, #thesis li {
+    color: #333333;
+}
+
+/* Thesis section specific alignment */
+#thesis .thesis-topics {
+    text-align: left;
+}
+
+#thesis .topic-category h5 {
+    text-align: left;
+}
+
+#thesis .topic-category ul {
+    text-align: left;
+    padding-left: 1.5em;
+}
+
+/* Tables styling */
+#publications table, #teaching table, #thesis table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+#publications th, #teaching th, #thesis th,
+#publications td, #teaching td, #thesis td {
+    padding: 0.5em;
+    text-align: left;
+    vertical-align: top;
+}
+
+#publications th, #teaching th, #thesis th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+#publications td, #teaching td, #thesis td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Lists and blockquotes */
+#publications blockquote, #teaching blockquote, #thesis blockquote,
+#publications ul, #teaching ul, #thesis ul,
+#publications ol, #teaching ol, #thesis ol {
+    text-align: left;
+}
+
+/* Thesis guidelines */
+.thesis-guidelines {
+    text-align: left;
+    margin-top: 1.5em;
+}
+
+#teaching blockquote, #thesis blockquote {
+    background-color: #f9f9f9;
+    border-left: 4px solid #20589F;
+    padding: 1em;
+    margin: 1em 0;
+    color: #333333;
+}
+
+/* Publications styling */
+.publications-container {
+    margin-top: 1em;
+    text-align: left;
+}
+
+.year-container {
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 0.5em;
+}
+
+.year-header {
+    color: #20589F;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.publication-item {
+    margin-bottom: 0.8em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px dotted rgba(0,0,0,0.05);
+}
+
+.publication-item h4 {
+    margin-bottom: 0.2em;
+    font-size: 1em;
+}
+
+.publication-item .authors {
+    font-style: italic;
+    margin-bottom: 0.2em;
+    font-size: 0.9em;
+}
+
+.publication-item .venue {
+    font-size: 0.85em;
+    color: #666;
+    margin-bottom: 0.2em;
+}
+
+.publication-item .links a {
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 0.85em;
+}
+
+/* Buttons */
+.show-all-btn, .show-guidelines-btn {
+    background: #20589F;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9em;
+    display: block;
+    width: fit-content;
+}
+
+.show-all-btn:hover, .show-guidelines-btn:hover {
+    background: #8CB7E1;
+}
+
+/* Footer copyright */
+#copyright {
+    text-align: center; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+#copyright li {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/* RWTH color scheme overrides */
+a {
+    color: #20589F;
+}
+
+a:hover {
+    color: #8CB7E1 !important;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #20589F;
+}
+
+.icon.featured {
+    color: #20589F;
+}
+
+.button.primary {
+    background-color: #20589F;
+}
+
+.button.primary:hover {
+    background-color: #8CB7E1;
+}
+
+/* Navigation logo only */
+#nav {
+    background-color: #20589F !important;
+}
+
+#nav .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3em;
+    line-height: 3em;
+}
+
+#nav .logo img {
+    height: 3.2em;
+    vertical-align: middle;
+}
+
+/* Override for hover styles to match RWTH colors */
+#nav a:hover {
+    background: #4078B0 !important;
+    color: #fff !important;
+}
+
+#nav a.active {
+    background: #8CB7E1 !important;
+}
+
+#nav a.active:before {
+    border-top-color: #20589F !important;
+}
+
+/* Responsive navigation adjustments */
+@media screen and (max-width: 1000px) {
+    #nav ul.container {
+        text-align: right;
+        padding-right: 1em;
+    }
+    
+    #nav .logo {
+        left: 10px;
+    }
+    
+    #nav .logo img {
+        height: 2.8em;
+    }
+}
+
+/* More adjustments for smaller screens */
+@media screen and (max-width: 736px) {
+    #nav ul.container {
+        text-align: right;
+        padding-right: 0.5em;
+    }
+    
+    #nav .logo {
+        left: 5px;
+    }
+    
+    #nav .logo img {
+        height: 2.5em;
+    }
+}
+
+/* Hide logo on very small screens */
+@media screen and (max-width: 790px) {
+    #nav .logo {
+        display: none;
+    }
+    
+    #nav ul.container {
+        text-align: center;
+        padding-right: 0;
+    }
+}
+
+/* Add space between navbar and content */
+article.wrapper:first-of-type {
+    margin-top: 3.5em;
+}
+
+/* Thesis topics section */
+.thesis-topics {
+    margin-top: 2em;
+}
+
+.thesis-topics h4 {
+    color: #20589F;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Override any other rules that might affect this heading */
+#thesis .thesis-topics h4 {
+    text-align: center !important;
+    color: #20589F !important;
+}
+
+.topic-category {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.topic-category h5 {
+    color: #333333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.topic-category ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    color: #333333;
+    text-align: left;
+}
+
+.topic-category li {
+    margin-bottom: 0.5em;
+    color: #333333;
+    text-align: left;
+}
+
+.topic-category li strong {
+    color: #20589F;
+}
+
+/* Publications section Google Scholar link */
+.scholar-link {
+    font-size: 0.9em;
+    margin-top: -0.5em;
+}
+
+.scholar-link a {
+    color: #20589F;
+    text-decoration: none;
+}
+
+.scholar-link a:hover {
+    color: #8CB7E1 !important;
+    text-decoration: underline;
+}
+
+/* Personal website link in teaching section */
+.personal-site-link {
+    font-size: 0.9em;
+    margin-top: -0.5em;
+}
+
+.personal-site-link a {
+    color: #20589F;
+    text-decoration: none;
+}
+
+.personal-site-link a:hover {
+    color: #8CB7E1 !important;
+    text-decoration: underline;
+} 
