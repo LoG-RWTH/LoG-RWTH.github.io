@@ -233,19 +233,7 @@ input, select, textarea {
 			width: 900px;
 		}
 
-		@media screen and (max-width: 1680px) {
-
-			.container {
-				width: 1200px;
-			}
-
-				.container.medium {
-					width: 900px;
-				}
-
-		}
-
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 4999px) {
 
 			.container {
 				width: 960px;
@@ -525,7 +513,7 @@ input, select, textarea {
 					padding-top: 50px;
 				}
 
-		@media screen and (max-width: 1680px) {
+		@media screen and (max-width: 4999px) {
 
 			.row {
 				display: flex;
@@ -770,7 +758,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 4999px) {
 
 			.row {
 				display: flex;
@@ -2178,7 +2166,7 @@ input, select, textarea {
 
 /* Large */
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 4999px) {
 
 		/* Basic */
 
