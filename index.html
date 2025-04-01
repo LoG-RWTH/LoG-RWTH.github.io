@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 	</head>
 	<body class="is-preload">
 
@@ -24,7 +25,24 @@
 					<li><a href="https://chrsmrrs.github.io/" target="_blank">Teaching</a></li>
 					<li><a href="#thesis">Thesis</a></li>
 				</ul>
+				<button id="mobile-nav-toggle" aria-label="Toggle Navigation Menu" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%) rotate(0deg); background: none; border: none; color: white; font-size: 22px; cursor: pointer; padding: 0; width: 30px; height: 30px; display: none; transition: transform 0.3s ease;">
+					<i class="fas fa-bars"></i>
+				</button>
 			</nav>
+
+		<!-- Mobile Sidebar -->
+			<div id="mobile-sidebar">
+				<ul>
+					<li><a href="#welcome">Welcome</a></li>
+					<li><a href="#group-members">Group Members</a></li>
+					<li><a href="https://scholar.google.de/citations?hl=en&user=pZua178AAAAJ&view_op=list_works&authuser=1" target="_blank">Publications</a></li>
+					<li><a href="https://chrsmrrs.github.io/" target="_blank">Teaching</a></li>
+					<li><a href="#thesis">Thesis</a></li>
+				</ul>
+			</div>
+
+		<!-- Mobile Nav Overlay -->
+			<div id="mobile-nav-overlay"></div>
 
 		<!-- Welcome -->
 			<article id="welcome" class="wrapper style1">
@@ -56,73 +74,109 @@
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="image fit"><img src="images/chris_2024.jpeg" alt="Chris"/></span>
-								<h3>Christopher Morris</h3>
-								<p><strong>Professor</strong></p>
-								<p>I am interested in both the theoretical aspects of graph learning—such as expressivity, generalization, and optimization—and its practical applications in combinatorial optimization and the sciences.</p>
+								<div class="content-wrapper">
+									<h3>Christopher Morris</h3>
+									<p><strong>Professor</strong></p>
+									<div class="bio-text">
+										<p>I am interested in both the theoretical aspects of graph learning—such as expressivity, generalization, and optimization—and its practical applications in combinatorial optimization and the sciences.</p>
+									</div>
+								</div>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="image fit"><img src="images/lm.jpg" alt="Luis"/></span>
-								<h3>Luis Müller</h3>
-								<p><strong>PhD Student</strong></p>
-								<p>I’m interested in studying the capabilities and limitations of general-purpose machine learning architectures in the context of graph learning. My current research focus is on deriving a principled understanding of graph transformers and their potential benefits over GNNs.</p>
+								<div class="content-wrapper">
+									<h3>Luis Müller</h3>
+									<p><strong>PhD Student</strong></p>
+									<div class="bio-text">
+										<p>I’m interested in studying the capabilities and limitations of general-purpose machine learning architectures in the context of graph learning. My current research focus is on deriving a principled understanding of graph transformers and their potential benefits over GNNs.</p>
+									</div>
+								</div>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon featured fa-user"></span>
-								<h3>Chendi Qian</h3>
-								<p><strong>PhD Student</strong></p>
-								<p>I am interested in graph machine learning, particularly in modeling long-range interactions and applying GNNs to optimization algorithms.</p>
+								<div class="content-wrapper">
+									<h3>Chendi Qian</h3>
+									<p><strong>PhD Student</strong></p>
+									<div class="bio-text">
+										<p>I am interested in graph machine learning, particularly in modeling long-range interactions and applying GNNs to optimization algorithms.</p>
+									</div>
+								</div>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="image fit"><img src="images/as.jpeg" alt="Antoine"/></span>
-								<h3>Antoine Siraudin</h3>
-								<p><strong>PhD Student</strong></p>
-								<p>God generated the universe, now it's my turn. I'm interested in graph generative models, with a particular focus on diffusion models, and their practical applications, such as combinatorial optimization.</p>
+								<div class="content-wrapper">
+									<h3>Antoine Siraudin</h3>
+									<p><strong>PhD Student</strong></p>
+									<div class="bio-text">
+										<p>God generated the universe, now it's my turn. I'm interested in graph generative models, with a particular focus on diffusion models, and their practical applications, such as combinatorial optimization.</p>
+									</div>
+								</div>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="image fit"><img src="images/av_2024.jpg" alt="Antonis"/></span>
-								<h3>Antonis Vasileiou</h3>
-								<p><strong>PhD Student</strong></p>
-								<p>I am interested in theoretical machine learning, focusing on generalization properties of graph neural networks, as well as graph similarity measures and their implications.</p>
+								<div class="content-wrapper">
+									<h3>Antonis Vasileiou</h3>
+									<p><strong>PhD Student</strong></p>
+									<div class="bio-text">
+										<p>I am interested in theoretical machine learning, focusing on generalization properties of graph neural networks, as well as graph similarity measures and their implications.</p>
+									</div>
+								</div>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon featured fa-user"></span>
-								<h3>Timo Stoll</h3>
-								<p><strong>PhD Student</strong></p>
-								<p>TBD.</p>
+								<div class="content-wrapper">
+									<h3>Timo Stoll</h3>
+									<p><strong>PhD Student</strong></p>
+									<div class="bio-text">
+										<p>TBD.</p>
+									</div>
+								</div>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="image fit"><img src="images/sw.jpeg" alt="Solveig"/></span>
-								<h3>Solveig Wittig</h3>
-								<p><strong>PhD Student</strong></p>
-								<p>I am interested in the theory of learning graphs and graphons. I come from a mathematical background. So please don't bother me with anything applied.</p>
+								<div class="content-wrapper">
+									<h3>Solveig Wittig</h3>
+									<p><strong>PhD Student</strong></p>
+									<div class="bio-text">
+										<p>I am interested in the theory of learning graphs and graphons. I come from a mathematical background. So please don't bother me with anything applied.</p>
+									</div>
+								</div>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon featured fa-user"></span>
-								<h3>Erik Müller</h3>
-								<p><strong>Student Assistant</strong></p>
-								<p>I am a student assistant.</p>
+								<div class="content-wrapper">
+									<h3>Erik Müller</h3>
+									<p><strong>Student Assistant</strong></p>
+									<div class="bio-text">
+										<p>I am a student assistant.</p>
+									</div>
+								</div>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon featured fa-user"></span>
-								<h3>Yusuf Sahin</h3>
-								<p><strong>Student Assistant</strong></p>
-								<p>I am a student assistant.</p>
+								<div class="content-wrapper">
+									<h3>Yusuf Sahin</h3>
+									<p><strong>Student Assistant</strong></p>
+									<div class="bio-text">
+										<p>I am a student assistant.</p>
+									</div>
+								</div>
 							</section>
 						</div>
 					</div>
@@ -187,6 +241,9 @@
 					</div>
 				</div>
 				<footer>
+					<div class="location-info" style="margin: 1em auto; font-size: 1.1em; color: #777; text-align: center !important;">
+						<p style="text-align: center !important;"><i class="fas fa-map-marker-alt" style="margin-right: 0.5em;"></i> <a href="https://maps.google.com/?q=Theaterstraße+35-39,+52062+Aachen" target="_blank">Theaterstraße 35-39, 52062 Aachen</a></p>
+					</div>
 					<ul id="copyright">
 						<li>© Learning on Graphs Group</li>
 					</ul>
@@ -217,6 +274,81 @@
 						}
 					});
 				}
+				
+				// Mobile navigation functionality
+				const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+				const mobileSidebar = document.getElementById('mobile-sidebar');
+				const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+				
+				// Force toggle button visible on small screens
+				function checkMobileSize() {
+					if (window.innerWidth <= 494) {
+						mobileNavToggle.style.display = 'block';
+					} else {
+						mobileNavToggle.style.display = 'none';
+					}
+				}
+				
+				// Run on load and resize
+				checkMobileSize();
+				window.addEventListener('resize', checkMobileSize);
+				
+				// Show mobile sidebar
+				function openMobileNav() {
+					mobileSidebar.style.display = 'block';
+					mobileNavOverlay.style.display = 'block';
+					setTimeout(() => {
+						mobileSidebar.classList.add('active');
+						mobileNavToggle.classList.add('active');
+						mobileNavToggle.style.transform = 'translateY(-50%) rotate(90deg)';
+						mobileNavOverlay.style.opacity = '1';
+					}, 10);
+					document.body.style.overflow = 'hidden'; // Prevent scrolling
+				}
+				
+				// Hide mobile sidebar
+				function closeMobileNav() {
+					mobileSidebar.classList.remove('active');
+					mobileNavToggle.classList.remove('active');
+					mobileNavToggle.style.transform = 'translateY(-50%) rotate(0deg)';
+					mobileNavOverlay.style.opacity = '0';
+					setTimeout(() => {
+						mobileSidebar.style.display = 'none';
+						mobileNavOverlay.style.display = 'none';
+						document.body.style.overflow = ''; // Enable scrolling
+					}, 400);
+				}
+				
+				// Event listeners
+				if (mobileNavToggle) {
+					mobileNavToggle.addEventListener('click', function() {
+						if (mobileSidebar.classList.contains('active')) {
+							closeMobileNav();
+						} else {
+							openMobileNav();
+						}
+					});
+				}
+				
+				// Close sidebar when clicking on overlay
+				if (mobileNavOverlay) {
+					mobileNavOverlay.addEventListener('click', closeMobileNav);
+				}
+				
+				// Close sidebar when clicking on a link
+				const mobileSidebarLinks = mobileSidebar.querySelectorAll('a');
+				mobileSidebarLinks.forEach(link => {
+					link.addEventListener('click', function() {
+						closeMobileNav();
+					});
+				});
+				
+				// Close sidebar when window is resized above mobile breakpoint
+				window.addEventListener('resize', function() {
+					if (window.innerWidth > 494 && mobileSidebar.classList.contains('active')) {
+						closeMobileNav();
+					}
+				});
 			});
 			</script>
 	</body>

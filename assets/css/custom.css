@@ -29,14 +29,82 @@ body {
 }
 
 /* Group member cards */
-.box.style1 p {
-    text-align: justify;
-    color: #333333;
+.box.style1 {
+    height: 500px; /* Increased fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
 }
 
-/* Center roles in group member cards */
-.box.style1 p:first-of-type {
+.box.style1 .image.fit {
+    margin-bottom: 1.5em;
+    height: 150px; /* Fixed height for image container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box.style1 .image.fit img {
+    max-height: 150px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.box.style1 .icon.featured {
+    margin-bottom: 1.5em;
+    height: 150px; /* Match the height of images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.box.style1 .icon.featured:before {
+    font-size: 5em;
+}
+
+/* Content wrapper for text in cards */
+.box.style1 .content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Name and role styling - at fixed position */
+.box.style1 h3 {
+    margin-bottom: 0.5em;
     text-align: center;
+}
+
+/* Position title should be centered */
+.box.style1 .content-wrapper > p:first-of-type {
+    text-align: center !important; /* Force center alignment with !important */
+    margin-bottom: 1.2em;
+    width: 100%; /* Ensure full width */
+}
+
+/* Bio text container - this will be vertically centered */
+.box.style1 .bio-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bio text should be justified, not centered */
+.box.style1 .bio-text p {
+    text-align: justify !important;
+    color: #333333;
+    margin-bottom: 0; /* Remove bottom margin to prevent spacing issues */
+    width: 100%; /* Ensure text takes full width */
+}
+
+/* Make sure we don't affect other paragraphs */
+.box.style1 p:last-of-type {
+    text-align: justify;
+    color: #333333;
 }
 
 /* Teaching section text colors */
@@ -244,6 +312,106 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     border-top-color: #20589F !important;
 }
 
+/* Mobile menu button - with stronger overrides */
+#mobile-nav-toggle {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    z-index: 1000;
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    text-align: center;
+    box-shadow: none !important;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+#mobile-nav-toggle i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    top: 2px;
+}
+
+#mobile-nav-toggle.active {
+    transform: translateY(-50%) rotate(90deg) !important;
+}
+
+/* Mobile sidebar navigation */
+#mobile-sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #20589F;
+    z-index: 999;
+    transition: right 0.4s ease;
+    overflow-y: auto;
+}
+
+#mobile-sidebar.active {
+    right: 0;
+}
+
+#mobile-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 100px 0 0 0;
+    text-align: center;
+}
+
+#mobile-sidebar li {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+#mobile-sidebar a {
+    display: block;
+    padding: 22px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 1.3em;
+    transition: background 0.2s ease;
+}
+
+#mobile-sidebar a:hover {
+    background: #4078B0;
+}
+
+/* Overlay for mobile navigation */
+#mobile-nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 998;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
 /* Responsive navigation adjustments */
 @media screen and (max-width: 1000px) {
     #nav ul.container {
@@ -260,8 +428,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     }
 }
 
+/* Hide logo between 530px and 649px */
+@media screen and (min-width: 530px) and (max-width: 649px) {
+    #nav .logo {
+        display: none;
+    }
+}
+
 /* More adjustments for smaller screens */
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 810px) {
     #nav ul.container {
         text-align: right;
         padding-right: 0.5em;
@@ -276,15 +451,31 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     }
 }
 
-/* Hide logo on very small screens */
-@media screen and (max-width: 790px) {
+/* Mobile navigation for very small screens */
+@media screen and (max-width: 530px) {
+    /* Show the mobile logo */
     #nav .logo {
+        display: block !important;
+        left: 15px;
+    }
+    
+    /* Hide the standard navigation menu */
+    #nav ul.container li:not(.logo) {
         display: none;
     }
     
+    /* Show the mobile menu toggle button */
+    #mobile-nav-toggle {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    /* Adjust the container */
     #nav ul.container {
-        text-align: center;
-        padding-right: 0;
+        text-align: left;
+        padding: 0;
+        min-height: 3.5em;
     }
 }
 
@@ -372,4 +563,46 @@ article.wrapper:first-of-type {
 .personal-site-link a:hover {
     color: #8CB7E1 !important;
     text-decoration: underline;
+}
+
+/* Responsive adjustments for cards */
+@media screen and (max-width: 980px) {
+    .box.style1 {
+        height: 520px; /* Slightly taller on medium screens */
+    }
+    
+    .box.style1 .content-wrapper {
+        margin-top: 0;
+    }
+    
+    .box.style1 h3 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .box.style1 {
+        height: auto; /* Auto height on small screens */
+        min-height: 450px; /* Minimum height to maintain some consistency */
+        padding: 1.5em;
+    }
+    
+    .box.style1 .image.fit,
+    .box.style1 .icon.featured {
+        height: 120px; /* Smaller images on small screens */
+        margin-bottom: 1em;
+    }
+    
+    .box.style1 .image.fit img {
+        max-height: 120px;
+    }
+    
+    .box.style1 .content-wrapper > p:first-of-type {
+        margin-bottom: 1em;
+    }
+    
+    /* Ensure bio text remains justified on mobile */
+    .box.style1 .bio-text p {
+        text-align: justify !important;
+    }
 } 
