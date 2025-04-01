@@ -30,7 +30,7 @@ body {
 
 /* Group member cards */
 .box.style1 {
-    height: 500px; /* Increased fixed height for all cards */
+    height: 600px; /* Increased fixed height for all cards */
     display: flex;
     flex-direction: column;
     text-align: center;
