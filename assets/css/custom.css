@@ -24,8 +24,14 @@ body {
 
 /* Group photo styling */
 #welcome .image.fit img {
-    max-width: 80%; 
-    margin: 0 auto;
+    max-width: 100%; 
+    margin: 0 auto 0 0; /* Align to the left */
+    padding-right: 10px; /* Create space on the right */
+}
+
+/* Welcome text styling */
+#welcome .col-7 {
+    padding-left: 20px; /* Add extra padding on the left */
 }
 
 /* Group member cards */
