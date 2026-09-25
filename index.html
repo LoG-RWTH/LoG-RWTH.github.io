@@ -1,369 +1,120 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Learning on Graphs</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learning on Graphs at RWTH Aachen University. Theoretical and practical approaches to graph machine learning, led by Christopher Morris.">
+  <meta name="theme-color" content="#701f32">
+  <title>Learning on Graphs · RWTH Aachen University</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css?v=20260925-research">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="top" class="site-header">
+    <nav class="site-nav page" aria-label="Main navigation">
+      <a href="#group-members">Group Members</a>
+      <a href="https://scholar.google.de/citations?hl=en&amp;user=pZua178AAAAJ&amp;view_op=list_works&amp;authuser=1">Publications</a>
+      <a href="https://chrsmrrs.github.io/">Teaching</a>
+      <a href="#thesis">Thesis</a>
+    </nav>
+  </header>
+  <main id="main" class="page">
+    <section id="welcome" class="intro" aria-labelledby="group-name">
+      <div class="intro-copy">
+        <h1 id="group-name">Learning on Graphs</h1>
+        <p>At the Learning on Graphs group, led by <a href="https://chrsmrrs.github.io/">Christopher Morris</a> at the Chair of Machine Learning and Reasoning at <a href="https://www.rwth-aachen.de/">RWTH Aachen University</a>, we are developing theoretical and practical approaches to machine learning on graphs.</p>
+        <p>We are happy to work with interested and dedicated students on these problems. Refer to <a href="#thesis">thesis guidelines</a> for further information.</p>
+      </div>
+      <aside class="group-profile" aria-label="Group photograph">
+        <img class="group-photo" src="images/group_2025.jpg" alt="Members of the Learning on Graphs group" width="2700" height="2695" fetchpriority="high">
+      </aside>
+    </section>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li class="logo"><img src="images/rwth_log_en_weiss_rgb.svg" alt="RWTH Aachen University Logo"></li>
-					<li><a href="#welcome">Welcome</a></li>
-					<li><a href="#group-members">Group Members</a></li>
-					<li><a href="https://scholar.google.de/citations?hl=en&user=pZua178AAAAJ&view_op=list_works&authuser=1" target="_blank">Publications</a></li>
-					<li><a href="https://chrsmrrs.github.io/" target="_blank">Teaching</a></li>
-					<li><a href="#thesis">Thesis</a></li>
-				</ul>
-				<button id="mobile-nav-toggle" aria-label="Toggle Navigation Menu" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%) rotate(0deg); background: none; border: none; color: white; font-size: 22px; cursor: pointer; padding: 0; width: 30px; height: 30px; display: none; transition: transform 0.3s ease;">
-					<i class="fas fa-bars"></i>
-				</button>
-			</nav>
+    <section id="research" class="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <div class="research-content">
+        <p>Our research brings together machine learning, theoretical computer science, and discrete mathematics. We focus on the following:</p>
+        <ol class="questions">
+          <li>How do we effectively capture (graph-)structured data in a data-driven manner?</li>
+          <li>How can we ensure such methods generalize to unseen data?</li>
+          <li>How can such methods improve discrete algorithms in a data-driven manner?</li>
+          <li>Applying principled learning on graphs to real-world problems.</li>
+        </ol>
+      </div>
+    </section>
 
-		<!-- Mobile Sidebar -->
-			<div id="mobile-sidebar">
-				<ul>
-					<li><a href="#welcome">Welcome</a></li>
-					<li><a href="#group-members">Group Members</a></li>
-					<li><a href="https://scholar.google.de/citations?hl=en&user=pZua178AAAAJ&view_op=list_works&authuser=1" target="_blank">Publications</a></li>
-					<li><a href="https://chrsmrrs.github.io/" target="_blank">Teaching</a></li>
-					<li><a href="#thesis">Thesis</a></li>
-				</ul>
-			</div>
+    <section id="group-members" class="section" aria-labelledby="members-title">
+      <h2 id="members-title" class="section-title">Group members</h2>
+      <article class="member member-lead">
+      <img class="portrait" src="images/chris_2024.jpeg" alt="Christopher Morris" width="120" height="120" loading="lazy" decoding="async">
+      <div><h3><a href="https://chrsmrrs.github.io/">Christopher Morris</a></h3><p class="member-role">Professor</p><p class="member-bio">I am interested in both the theoretical aspects of graph learning—such as expressivity, generalization, and optimization—and its practical applications in combinatorial optimization and the sciences.</p></div>
+    </article>
+      <div class="researchers">
+        <article class="member">
+      <img class="portrait" src="images/qian.jpg" alt="Chendi Qian" width="120" height="120" loading="lazy" decoding="async">
+      <div><h3>Chendi Qian</h3><p class="member-role">PhD Student</p><p class="member-bio">I am interested in graph machine learning, particularly in modeling long-range interactions and applying GNNs to optimization algorithms.</p></div>
+    </article>
+<article class="member">
+      <img class="portrait" src="images/as.jpeg" alt="Antoine Siraudin" width="120" height="120" loading="lazy" decoding="async">
+      <div><h3>Antoine Siraudin</h3><p class="member-role">PhD Student</p><p class="member-bio">I&#x27;m interested in graph generative models, with a particular focus on diffusion models, and their practical applications, such as combinatorial optimization.</p></div>
+    </article>
+<article class="member">
+      <img class="portrait" src="images/av_2024.jpg" alt="Antonis Vasileiou" width="120" height="120" loading="lazy" decoding="async">
+      <div><h3>Antonis Vasileiou</h3><p class="member-role">PhD Student</p><p class="member-bio">I am interested in theoretical machine learning, focusing on generalization properties of graph neural networks, as well as graph similarity measures and their implications.</p></div>
+    </article>
+<article class="member">
+      <img class="portrait" src="images/ts.jpeg" alt="Timo Stoll" width="120" height="120" loading="lazy" decoding="async">
+      <div><h3>Timo Stoll</h3><p class="member-role">PhD Student</p><p class="member-bio">I am interested in both theory and practical applications of graph machine learning, currently focusing on graph transformer and foundation models.</p></div>
+    </article>
+<article class="member">
+      <img class="portrait" src="images/sw.jpeg" alt="Solveig Wittig" width="120" height="120" loading="lazy" decoding="async">
+      <div><h3>Solveig Wittig</h3><p class="member-role">PhD Student</p><p class="member-bio">I am interested in the theory behind graph machine learning, particularly neural algorithmic reasoning, focusing on expressivity and learning guarantees.</p></div>
+    </article>
+      </div>
+      <div class="assistants">
+        <article class="member member-assistant">
+      <img class="portrait" src="images/em.jpg" alt="Erik Müller" width="120" height="120" loading="lazy" decoding="async">
+      <div><h3>Erik Müller</h3><p class="member-role">Student Assistant</p></div>
+    </article>
+<article class="member member-assistant">
+      <div class="portrait portrait-placeholder" aria-hidden="true">GCD</div>
+      <div><h3>Gia Chi Dang</h3><p class="member-role">Student Assistant</p></div>
+    </article>
+      </div>
+    </section>
 
-		<!-- Mobile Nav Overlay -->
-			<div id="mobile-nav-overlay"></div>
+    <section id="alumni" class="section" aria-labelledby="alumni-title">
+      <h2 id="alumni-title" class="section-title">Alumni</h2>
+      <div class="alumni-members">
+        <article class="member">
+      <img class="portrait" src="images/lm.jpg" alt="Luis Müller" width="120" height="120" loading="lazy" decoding="async">
+      <div><h3>Luis Müller</h3><p class="member-role">Now at Google Research</p><p class="member-bio">PhD student from 2022 to 2026.</p></div>
+    </article>
+      </div>
+    </section>
 
-		<!-- Welcome -->
-			<article id="welcome" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/group_2025.jpg" alt="group picture" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1><strong>Learning on Graphs</strong></h1>
-							</header>
-							<p><a href="https://www.rwth-aachen.de/" target="_blank">RWTH Aachen University</a></p>
-							<p>At the Learning on Graphs group, led by <a href="https://chrsmrrs.github.io/" target="_blank">Christopher Morris</a> at the Chair of Machine Learning and Reasoning at RWTH Aachen University, we are developing theoretical and practical approaches to machine learning on graphs. Machine learning on graphs is a relatively new field in machine learning that develops methods that automatically make predictions about graphs. Our work is characterized by examining practical methods in terms of their theoretical properties.</p>
-							<p>We are happy to work with interested and dedicated students on these problems. Refer to <a href="#thesis" class="scrolly">thesis guidelines</a> for further information.</p>
-						</div>
-					</div>
-				</div>
-			</article>
-
-		<!-- Group Members -->
-			<article id="group-members" class="wrapper style1">
-				<div class="container">
-					<header>
-						<h2>Group Members</h2>
-						<p>Meet our team.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="image fit"><img src="images/chris_2024.jpeg" alt="Chris"/></span>
-								<div class="content-wrapper">
-									<h3>Christopher Morris</h3>
-									<p><strong>Professor</strong></p>
-									<div class="bio-text">
-										<p>I am interested in both the theoretical aspects of graph learning—such as expressivity, generalization, and optimization—and its practical applications in combinatorial optimization and the sciences.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="image fit"><img src="images/lm.jpg" alt="Luis"/></span>
-								<div class="content-wrapper">
-									<h3>Luis Müller</h3>
-									<p><strong>PhD Student</strong></p>
-									<div class="bio-text">
-										<p>I am interested in studying the benefits and limitations of transformer models, in particular for graph learning and algorithmic reasoning.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="image fit"><img src="images/qian.jpg" alt="Chendi"/></span>
-								<div class="content-wrapper">
-									<h3>Chendi Qian</h3>
-									<p><strong>PhD Student</strong></p>
-									<div class="bio-text">
-										<p>I am interested in graph machine learning, particularly in modeling long-range interactions and applying GNNs to optimization algorithms.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="image fit"><img src="images/as.jpeg" alt="Antoine"/></span>
-								<div class="content-wrapper">
-									<h3>Antoine Siraudin</h3>
-									<p><strong>PhD Student</strong></p>
-									<div class="bio-text">
-										<p>I'm interested in graph generative models, with a particular focus on diffusion models, and their practical applications, such as combinatorial optimization.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="image fit"><img src="images/av_2024.jpg" alt="Antonis"/></span>
-								<div class="content-wrapper">
-									<h3>Antonis Vasileiou</h3>
-									<p><strong>PhD Student</strong></p>
-									<div class="bio-text">
-										<p>I am interested in theoretical machine learning, focusing on generalization properties of graph neural networks, as well as graph similarity measures and their implications.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="image fit"><img src="images/ts.jpeg" alt="Timo"/></span>
-								<div class="content-wrapper">
-									<h3>Timo Stoll</h3>
-									<p><strong>PhD Student</strong></p>
-									<div class="bio-text">
-										<p>I am interested in both theory and practical applications of graph machine learning, currently focusing on graph transformer and foundation models. </p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="image fit"><img src="images/sw.jpeg" alt="Solveig"/></span>
-								<div class="content-wrapper">
-									<h3>Solveig Wittig</h3>
-									<p><strong>PhD Student</strong></p>
-									<div class="bio-text">
-										<p>I am interested in the theory behind graph machine learning, particularly neural algorithmic reasoning, focusing on expressivity and learning guarantees.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="image fit"><img src="images/em.jpg" alt="Erik"/></span>
-								<div class="content-wrapper">
-									<h3>Erik Müller</h3>
-									<p><strong>Student Assistant</strong></p>
-									<div class="bio-text">
-										<p>I am a student assistant.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="image fit"><img src="images/darius.jpg" alt="Darius"/></span>
-								<div class="content-wrapper">
-									<h3>Darius Weber</h3>
-									<p><strong>Student Assistant</strong></p>
-									<div class="bio-text">
-										<p>I am a student assistant.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-user"/></span>
-								<div class="content-wrapper">
-									<h3>Gia Chi Dang</h3>
-									<p><strong>Student Assistant</strong></p>
-									<div class="bio-text">
-										<p>I am a student assistant.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-					</div>
-				</div>
-			</article>
-
-		<!-- Thesis -->
-			<article id="thesis" class="wrapper style1">
-				<div class="container">
-					<header>
-						<h2>Thesis Opportunities</h2>
-						<p>We also offer supervision over thesis works for RWTH students.</p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<section>
-								<a href="#" class="button primary show-guidelines-btn">Show Thesis Guidelines</a>
-								
-								<div class="thesis-guidelines" style="display:none;">
-									<blockquote>
-										<p>If you are interested, please reach out to us via <strong>morris[ät]cs.rwth-aachen[dot]de</strong> with (Subject: "[Thesis]") and answer the following questions:</p>
-										<ol>
-											<li>Is there a paper from our current research that interests you?</li>
-											<li>Are you leaning more toward a theoretical or applied topic?</li>
-											<li>What are your (CS-related) strengths and weaknesses?</li>
-											<li>What is your ideal starting date?</li>
-										</ol>
-										<p>Please include an up-to-date transcript of records.</p>
-									</blockquote>
-								</div>
-								<!--
-								<div class="thesis-topics">
-									<h4>Available Thesis Topics</h4>
-									
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<div class="topic-category">
-												<h5>Bachelor Thesis</h5>
-												<ul>
-													<li><strong>Topic 1:</strong> TBD.</li>
-													<li><strong>Topic 2:</strong> TBD.</li>
-													<li><strong>Topic 3:</strong> TBD.</li>
-												</ul>
-											</div>
-										</div>
-										<div class="col-6 col-12-medium">
-											<div class="topic-category">
-												<h5>Master Thesis</h5>
-												<ul>
-													<li><strong>Topic 1:</strong> TBD.</li>
-													<li><strong>Topic 2:</strong> TBD.</li>
-													<li><strong>Topic 3:</strong> TBD.</li>
-													<li><strong>Topic 4:</strong> TBD.</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								 -->
-							</section>
-						</div>
-					</div>
-				</div>
-				<footer>
-					<div class="location-info" style="margin: 1em auto; font-size: 1.1em; color: #777; text-align: center !important;">
-						<p style="text-align: center !important;"><i class="fas fa-map-marker-alt" style="margin-right: 0.5em;"></i> <a href="https://maps.google.com/?q=Theaterstraße+35-39,+52062+Aachen" target="_blank">Theaterstraße 35-39, 52062 Aachen</a></p>
-					</div>
-					<ul id="copyright">
-						<li>© Learning on Graphs Group</li>
-					</ul>
-				</footer>
-			</article>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-			document.addEventListener('DOMContentLoaded', function() {
-				// Toggle for thesis guidelines
-				const showGuidelinesBtn = document.querySelector('.show-guidelines-btn');
-				if (showGuidelinesBtn) {
-					showGuidelinesBtn.addEventListener('click', function(e) {
-						e.preventDefault();
-						const guidelinesSection = document.querySelector('.thesis-guidelines');
-						if (guidelinesSection.style.display === 'none') {
-							guidelinesSection.style.display = 'block';
-							this.textContent = 'Hide Thesis Guidelines';
-						} else {
-							guidelinesSection.style.display = 'none';
-							this.textContent = 'Show Thesis Guidelines';
-						}
-					});
-				}
-				
-				// Mobile navigation functionality
-				const mobileNavToggle = document.getElementById('mobile-nav-toggle');
-				const mobileSidebar = document.getElementById('mobile-sidebar');
-				const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
-				
-				// Force toggle button visible on small screens
-				function checkMobileSize() {
-					if (window.innerWidth <= 494) {
-						mobileNavToggle.style.display = 'block';
-					} else {
-						mobileNavToggle.style.display = 'none';
-					}
-				}
-				
-				// Run on load and resize
-				checkMobileSize();
-				window.addEventListener('resize', checkMobileSize);
-				
-				// Show mobile sidebar
-				function openMobileNav() {
-					mobileSidebar.style.display = 'block';
-					mobileNavOverlay.style.display = 'block';
-					setTimeout(() => {
-						mobileSidebar.classList.add('active');
-						mobileNavToggle.classList.add('active');
-						mobileNavToggle.style.transform = 'translateY(-50%) rotate(90deg)';
-						mobileNavOverlay.style.opacity = '1';
-					}, 10);
-					document.body.style.overflow = 'hidden'; // Prevent scrolling
-				}
-				
-				// Hide mobile sidebar
-				function closeMobileNav() {
-					mobileSidebar.classList.remove('active');
-					mobileNavToggle.classList.remove('active');
-					mobileNavToggle.style.transform = 'translateY(-50%) rotate(0deg)';
-					mobileNavOverlay.style.opacity = '0';
-					setTimeout(() => {
-						mobileSidebar.style.display = 'none';
-						mobileNavOverlay.style.display = 'none';
-						document.body.style.overflow = ''; // Enable scrolling
-					}, 400);
-				}
-				
-				// Event listeners
-				if (mobileNavToggle) {
-					mobileNavToggle.addEventListener('click', function() {
-						if (mobileSidebar.classList.contains('active')) {
-							closeMobileNav();
-						} else {
-							openMobileNav();
-						}
-					});
-				}
-				
-				// Close sidebar when clicking on overlay
-				if (mobileNavOverlay) {
-					mobileNavOverlay.addEventListener('click', closeMobileNav);
-				}
-				
-				// Close sidebar when clicking on a link
-				const mobileSidebarLinks = mobileSidebar.querySelectorAll('a');
-				mobileSidebarLinks.forEach(link => {
-					link.addEventListener('click', function() {
-						closeMobileNav();
-					});
-				});
-				
-				// Close sidebar when window is resized above mobile breakpoint
-				window.addEventListener('resize', function() {
-					if (window.innerWidth > 494 && mobileSidebar.classList.contains('active')) {
-						closeMobileNav();
-					}
-				});
-			});
-			</script>
-	</body>
+    <section id="thesis" class="section thesis" aria-labelledby="thesis-title">
+      <h2 id="thesis-title">Thesis<br class="desktop-break"> opportunities</h2>
+      <div class="thesis-content">
+        <p>We also offer supervision over thesis works for RWTH students.</p>
+        <details open>
+          <summary>Thesis guidelines</summary>
+          <div class="guidelines">
+            <p>If you are interested, please reach out to us via <span class="contact-email">morris[ät]cs.rwth-aachen[dot]de</span> with the subject <strong>[Thesis]</strong> and answer the following questions:</p>
+            <ol><li>Is there a paper from our current research that interests you?</li>
+<li>Are you leaning more toward a theoretical or applied topic?</li>
+<li>What are your (CS-related) strengths and weaknesses?</li>
+<li>What is your ideal starting date?</li></ol>
+            <p>Please include an up-to-date transcript of records.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer page">
+    <div><a href="https://maps.google.com/?q=Theaterstraße+35-39,+52062+Aachen">Theaterstraße 35-39, 52062 Aachen</a><p>© Learning on Graphs Group</p></div>
+    <a href="#top">Back to top</a>
+  </footer>
+</body>
 </html>
