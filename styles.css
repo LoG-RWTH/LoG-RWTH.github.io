@@ -1,3 +1,79 @@
+/* Local font preview. No Adobe font binaries are included or hosted.
+   For publication, add your licensed Adobe Fonts web-project stylesheet to
+   each HTML head. Its minion-pro and myriad-pro families take priority below.
+   Adobe web setup: https://helpx.adobe.com/fonts/web/web-design-and-development/add-fonts-website.html */
+@font-face {
+  font-family: 'Minion Pro Local';
+  src: local('MinionPro-Regular');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro Local';
+  src: local('MinionPro-Bold');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro Local';
+  src: local('MinionPro-It');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro Local';
+  src: local('MinionPro-BoldIt');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Local';
+  src: local('MyriadPro-Regular');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Local';
+  src: local('MyriadPro-Semibold');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Local';
+  src: local('MyriadPro-Bold');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Local';
+  src: local('MyriadPro-It');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Local';
+  src: local('MyriadPro-BoldIt');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* EB Garamond, SIL Open Font License. See assets/fonts/eb-garamond/OFL.txt. */
 @font-face {
   font-family:'EB Garamond'; font-style:normal; font-weight:400; font-display:swap;
@@ -13,8 +89,8 @@
   color-scheme:light;
   --paper:#fcfbf9; --ink:#302d2e; --muted:#6e6667; --maroon:#701f32; --maroon-dark:#481220;
   --line:#ded8d6; --rose:#f4eded;
-  --serif:'EB Garamond','Palatino Linotype','Book Antiqua',Palatino,Georgia,serif;
-  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  --serif:'minion-pro','Minion Pro Local','EB Garamond','Palatino Linotype','Book Antiqua',Palatino,Georgia,serif;
+  --sans:'myriad-pro','Myriad Pro Local',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
 }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; scroll-padding-top:2rem; }
