@@ -126,7 +126,7 @@ p { margin-bottom:18px; }
 .section-title { margin-bottom:28px; }
 .member { display:grid; grid-template-columns:108px minmax(0,1fr); gap:22px; padding-block:26px; border-top:1px solid var(--line); align-items:start; }
 .portrait { display:block; width:108px; height:108px; object-fit:cover; object-position:center; }
-.portrait[src$="chris_2024.jpeg"] { object-position:50% 45%; }
+.portrait[src$="chris_red.png"] { object-position:50% 45%; }
 .portrait[src$="qian.jpg"], .portrait[src$="as.jpeg"] { object-position:50% 65%; }
 .portrait[src$="av_2024.jpg"] { object-position:50% 30%; }
 .portrait[src$="sw.jpeg"] { object-position:50% 35%; }
