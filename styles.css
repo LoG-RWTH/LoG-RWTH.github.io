@@ -113,6 +113,7 @@ p { margin-bottom:18px; }
 .site-nav a { display:flex; align-items:center; min-height:44px; padding-block:7px; }
 .intro { display:grid; grid-template-columns:minmax(0,1fr) 300px; column-gap:5rem; padding-block:56px 44px; align-items:start; }
 .intro-copy > p:last-child { margin-bottom:0; }
+.intro-copy .notice { margin:25px 0 0; padding:2px 0 2px 14px; border-left:2px solid var(--maroon); color:var(--muted); font-size:.9375rem; }
 .group-profile { padding-top:3px; }
 .group-photo { display:block; width:100%; height:auto; border-radius:50%; }
 .research { display:grid; grid-template-columns:180px minmax(0,1fr); gap:28px; padding:30px 32px; margin-bottom:38px; background:var(--rose); border:1px solid #ddc8ce; border-left:3px solid var(--maroon); }
